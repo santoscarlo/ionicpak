@@ -1,3 +1,69 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+
+
+
+    <ion-content>
+      <div class="menu-header-bg"> </div>
+      <div class="header-content">
+        <img src="../assets/icon/arl.jpg" alt="">
+        <ion-label>
+          <h2>Carlo Santos</h2>
+          <p>Software Engineer</p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-menu-toggle>
+          <ion-button routerLink="/home">
+            <ion-icon slot="start" name="home"></ion-icon>HOME
+          </ion-button>
+        </ion-menu-toggle>
+      </div>
+
+        <ion-list class="menu-items" lines="none">
+          <ion-menu-toggle>
+            <ion-item routerLink="/viewproduct">
+              <ion-icon name="cart-outline" slot="start"></ion-icon>Products
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle>
+            <ion-item routerLink="/cater">
+              <ion-icon name="briefcase-outline" slot="start"></ion-icon>Item Out/In
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle>
+            <ion-item routerLink="/reports">
+              <ion-icon name="cloud-outline" slot="start"></ion-icon>Reports
+            </ion-item>
+          </ion-menu-toggle>
+
+        </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- <ion-list>
+    <ion-menu-toggle>
+      <ion-item routerLink="/viewproduct">
+        <ion-icon name="cart" slot="start"></ion-icon>
+        <ion-label>Product</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle>
+      <ion-item routerLink="/cater">
+        <ion-icon name="briefcase-outline" slot="start"></ion-icon>
+        <ion-label>Cater Item Out/In</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle>
+      <ion-item routerLink="/reports">
+        <ion-icon name="cloud-outline" slot="start"></ion-icon>
+        <ion-label>Reports</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-list> -->
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
